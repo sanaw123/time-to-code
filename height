@@ -1,0 +1,11 @@
+def valid_height(height)
+  if height<91:
+    RETURN FALSE
+  else:
+    RETURN TRUE
+#MAIN 
+height=float(input("enter height"))
+if valid_height(height):
+  print("The height is Ok")
+else:
+  print("Sorry you are too tall")
