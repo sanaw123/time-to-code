@@ -1,0 +1,16 @@
+#ask for number input
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+number3 = int(input("Enter the third number: "))
+
+#comparing the three numbers and which one is bigger
+
+if (number1==number2) and (number1==number3):
+    print("number 1 is the largest")
+elif (number1> number2) and (number1>number3):
+  print("number 1 is the largest")
+elif (number2>number1) and (number2> number3):
+  print("number 2 is the largest")
+else:
+  print("number 3 is the largest")
+endif
