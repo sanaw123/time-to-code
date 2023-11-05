@@ -1,0 +1,81 @@
+# Exam grade program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def grade(mark):
+  if mark<2:
+    grade="U"
+    return grade
+  elif mark>=2 and mark<4:
+    grade=1
+    return grade
+  elif mark>=4 and mark<13:
+    grade=2
+    return grade
+  elif mark>=13 and mark<22:
+    grade=3
+    return grade
+  elif mark>=22 and mark<31:
+    grade=4
+    return grade
+  elif mark>=31 and mark<41:
+    grade=5
+    return grade
+  elif mark>=41 and mark<54:
+    grade=6
+    return grade
+  elif mark>=54 and mark<67:
+    grade=7
+    return grade
+  elif mark>=67 and mark<80:
+    grade=8
+    return grade
+  elif mark>=80:
+    grade=9
+    return grade
+  else:
+    return "invalid mark"
+  endif
+  
+def marks_needed(mark):
+  if grade=="U":
+    marksneeded=2-mark
+    return marksneeded
+  elif grade==1:
+    marksneeded=4-mark
+    return marksneeded
+  elif grade==2:
+    marksneeded=13-mark
+    return marksneeded
+  elif grade==3:
+    marksneeded=22-mark
+    return marksneeded
+  elif grade==4:
+    marksneeded=31-mark
+    return marksneeded
+  elif grade==5:
+    marksneeded=41-mark
+    return marksneeded
+  elif grade==6:
+    marksneeded=54-mark
+    return marksneeded
+  elif grade==7:
+    marksneeded=67-mark
+    return marksneeded
+  elif grade==8:
+    marksneeded=80-mark
+    return marksneeded
+  elif grade==9:
+    marksneeded=100-mark
+    return marksneeded
+  else:
+    return ("you are on a grade boundary")
+  endif
+# -------------------------
+# Main program
+mark=int(input("enter a mark between 0-100:"))
+grade=grade(mark)
+print("A mark of ", mark, "is grade",grade )
+print("You needed ",marks_needed(mark),"marks to achieve the next grade")
+# -------------------------
