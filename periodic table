@@ -4,62 +4,28 @@
 # Subprograms
 # -------------------------
 def periodic_table(user):
-  if user=="Li"or user=="Lithium":
-      return "symbol=Li" "element=Lithium" "atomic_weight=6.94" "group=Alkali metals"
-      
-      
-  elif user=="Na"or user=="Sodium":
-      symbol="Na"
-      element="Sodium"
-      atomic_weight=22.99
-      group="Alkali metals"
-      return symbol
-      return element
-      return atomic_weight
-      return group
-  elif user=="K"or user=="Potassium":
-      symbol="K"
-      element="Potassium"
-      atomic_weight=39.098
-      group="Alkali metals"
-      return symbol
-      return element
-      return atomic_weight
-      return group
-  elif user=="Flourine" or user=="F":
-      symbol="F"
-      element="Flourine"
-      atomic_weight=18.998
-      group="Halogens"
-      return symbol
-      return element
-      return atomic_weight
-      return group
+  if user=="Li" or user=="Lithium":
+    output="symbol=Li element=Lithium atomic_weight=6.94 group=Alkali metals"
+    return output
+  elif user=="Na" or user=="Sodium":
+    output="symbol=Na element=Sodium atomic_weight=22.99 group=Alkali metals"
+    return output
+  elif user=="K" or user=="Potassium":
+    output="symbol=K element=Potassium atomic_weight=39.098 group=Alkali metals"
+    return output
+  elif user=="F" or user=="Flourine":
+    output="symbol=F element=Flourine atomic_weight=18.998 group=Halogens"
+    return output
   elif user=="Cl" or user=="Chlorine":
-    symbol="Cl"
-    element="Chlorine"
-    atomic_weight=35.45
-    group="Halogens"
-    return symbol
-    return element
-    return atomic_weight
-    return group
+    output="symbol=Cl element=Chlorine atomic_weight=35.45 group=Halogens"
+    return output
   elif user=="Br" or user=="Bromine":
-    symbol="Br"
-    element="Bromine"
-    atomic_weight=79.904
-    group="Halogens"
-    return symbol
-    return element
-    return atomic_weight
-    return group
+    output="symbol=Br element=Bromine atomic_weight=79.904 group=Bromine"
+    return output
   else:
-    return "enter a valid input"
-  endif
-
+    return "invalid input"
 # -------------------------
 # Main program
 # -------------------------
-elements=input("enter the symbol or name of element")
-print(periodic_table(elements))
-print(output)
+element=input("enter the symbol or name of an element")
+print(periodic_table(element))
